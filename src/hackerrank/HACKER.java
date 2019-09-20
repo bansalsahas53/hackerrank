@@ -1,5 +1,6 @@
-/*package hackerrank;
+package hackerrank;
 import java.util.Scanner;
+import java.lang.String;
 import java.lang.StringBuilder;
 public class HACKER {
     public static void main(String[] args) {
@@ -15,10 +16,24 @@ public class HACKER {
                 String bookName =scan.nextLine().trim();
                 String authorName=scan.nextLine().trim();
                 String isbn=scan.nextLine().trim();
-                b[i]=new Book(bookName,authorName,isbn);
+                b[i]=new Book();
             }
+            for (int i=0; i<num;i++){
+                System.out.println(b[i]);
+            }
+            scan.close();
         }
     }
 
 }
-class Book{}*/
+class Book{
+    private String bookName;
+    private String authorName;
+    private String isbn;
+    @Override
+    public String toString(){
+        return "--------------------\n"+"Book Name:\t"+bookName+"\n"+
+                "Author Name:\t"+authorName+"\n"+"ISBN:\t"+isbn+"\n"+
+                "-------------------";
+    }
+}

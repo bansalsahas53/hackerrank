@@ -1,4 +1,4 @@
-import java.io.*;
+/*import java.io.*;
 import java.util.*;
 
 class Solution {
@@ -67,3 +67,4 @@ class Player{
         return getplayerName() + "\t" + getuserName() + "\t" + getLevel() + "\t" + getscore();
     }
 }
+*/
